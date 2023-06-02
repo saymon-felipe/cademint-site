@@ -1,0 +1,119 @@
+:root {
+    --green-high: #96E292;
+    --green-high-2: #C9F8C6;
+    --green-mid: #86CD82;
+    --green-dark: #76B672;
+    --red-high: #EB6D53;
+    --red-high-2: #FFE1DB;
+    --red-mid: #D64A2E;
+    --red-dark: #B14934;
+    
+    /* CINZA */
+    --cinza-100: #F2F2F2;
+    --cinza-200: #E6E6E6;
+    --cinza-300: #CCCCCC;
+    --cinza-400: #B3B3B3;
+    --cinza-500: #999999;
+    --cinza-600: #808080;
+    --cinza-700: #666666;
+
+    /* NEUTRO */
+    --white: #FFFFFF;
+    --black: 222222;
+
+    /* SECUNDÁRIA */
+    --secundaria-high: #496AFD;
+    --secundaria-high-2: #859BFE;
+    --secundaria-mid: #355AFD;
+    --secundaria-dark: #3050DC;
+
+    /* PRIMÁRIA */
+    --primaria-mid: #FFCA37;
+    --primaria-high: #FFD35C;
+    --primaria-dark: #E4B531;
+}
+
+html, body {
+    overflow-x: hidden;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+body {
+    font-family: Ubuntu, 'Open Sans', sans-serif;
+    color: var(--black);
+}
+
+.cademint-header {
+    background: var(--primaria-mid);
+}
+
+.cademint-logo {
+    width: calc(8rem + 5vw);
+    min-width: 10rem;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    background: var(--primaria-dark);
+}
+
+.ml-0 {
+    margin-left: 0 !important;
+}
+
+.btn {
+    font-weight: 500;
+    white-space: nowrap;
+    margin: 0 .5rem;
+}
+
+.btn-outline-blue {
+    border: 1px solid var(--secundaria-mid);
+    color: var(--secundaria-mid);
+}
+
+    .btn-outline-blue:hover {
+        border: 1px solid var(--secundaria-dark);
+        background: var(--secundaria-dark);
+        color: var(--white);
+    }
+
+.btn-blue {
+    background: var(--secundaria-mid);
+    color: var(--white);
+}
+
+    .btn-blue:hover {
+        background: var(--secundaria-dark);
+        color: var(--white);
+    }
+
+.support-text-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+    .support-text-header h6 {
+        margin: 0;
+    }
+
+    .support-text-header i {
+        margin-right: .5rem;
+        font-size: 22px;
+        color: var(--secundaria-mid)
+    }
+
+.support-text p {
+    color: var(--cinza-700);
+}
+
+@media (max-width: 768px) {
+    .support-text {
+        margin-bottom: 2rem;
+    }
+}
