@@ -58,6 +58,10 @@ body {
     color: var(--black);
 }
 
+.nav-item {
+    margin: 0 .5rem;
+}
+
 .nav-item:hover {
     color: var(--black);
     background: var(--primaria-dark);
@@ -114,8 +118,43 @@ body {
     color: var(--cinza-700);
 }
 
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 1000px;
+    margin: 3rem auto;
+}
+
+.feature img {
+    width: calc(10rem + 5vw);
+    min-width: 250px;
+    max-width: 500px;
+}
+
+.feature-image {
+    margin-right: 3rem;
+}
+
+.feature-right .feature-image {
+    margin-right: 0;
+    margin-left: 3rem;
+}
+
+.feature-right .feature-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
 @media (max-width: 768px) {
     .support-text {
         margin-bottom: 2rem;
+    }
+
+    .feature {
+        flex-direction: column;
     }
 }
