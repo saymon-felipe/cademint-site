@@ -149,6 +149,49 @@ body {
     text-align: right;
 }
 
+.about-title img {
+    width: calc(10rem + 5vw);
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.about-video {
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.about-video, .about-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about-video video {
+    width: 100%;
+    display: none;
+}
+
+.about-video i {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--white);
+    transition: all 0.4s;
+}
+
+    .about-video i:hover {
+        font-size: 3.5rem;
+    }
+
+
 @media (max-width: 768px) {
     .support-text {
         margin-bottom: 2rem;
