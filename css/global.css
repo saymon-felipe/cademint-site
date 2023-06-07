@@ -191,6 +191,106 @@ body {
         font-size: 3.5rem;
     }
 
+.plan {
+    border: 1px solid var(--cinza-200);
+    border-radius: 5px;
+    padding: 1.2rem;
+    position: relative;
+    overflow: hidden;
+    margin: 1rem;
+    min-width: 270px;
+    max-width: 500px;
+    width: calc(200px + 7vw);
+    min-height: 500px;
+}
+
+.plan-name-label {
+    background: var(--cinza-100);
+    border: 1px solid var(--cinza-200);
+    border-radius: 18px;
+    padding: 3px 10px;
+}
+
+.plan-header button {
+    margin: 0;
+    width: 100%;
+}
+
+.plan-feature {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--cinza-200);
+    padding: 10px 0;
+}
+
+    .plan-feature:last-child {
+        border-bottom: none;
+    }
+
+    .plan-feature p {
+        margin: 0;
+    }
+
+    .plan-feature i {
+        margin-right: 10px;
+    }
+
+.plan.plan-free::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 120px;
+    background: var(--secundaria-high-2);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -30px;
+}
+
+.plan.plan-worker::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    background: var(--primaria-high);
+    border-radius: 20px;
+    position: absolute;
+    top: -30px;
+    right: -40px;
+}
+
+.plan.plan-custom img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.most-popular {
+    position: relative;
+    width: fit-content;
+    margin: 1rem;
+    margin-top: 3rem;
+}
+
+.most-popular .plan {
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid var(--secundaria-mid);
+}
+
+.most-popular::before {
+    content: "Mais popular";
+    background: var(--secundaria-mid);
+    color: var(--white);
+    text-align: center;
+    display: block;
+    position: absolute;
+    padding: 5px;
+    top: -34px;
+    left: 0;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
 
 @media (max-width: 768px) {
     .support-text {
