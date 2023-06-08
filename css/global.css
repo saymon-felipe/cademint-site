@@ -292,6 +292,39 @@ body {
     border-radius: 5px 5px 0 0;
 }
 
+.accordion {
+    border: 1px solid var(--cinza-200);
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.accordion-title {
+    font-weight: 700;
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+    .accordion-header i {
+        font-size: 2rem;
+        transition: transform 0.4s;
+    }
+
+.accordion-body {
+    padding: 0;
+    margin-top: 1rem;
+    display: none;
+}
+
+    .accordion-body p {
+        margin: 0;
+    }
+
 @media (max-width: 768px) {
     .support-text {
         margin-bottom: 2rem;

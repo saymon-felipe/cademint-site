@@ -22,3 +22,19 @@ function stopVideo() {
     video.currentTime = 0;
     video.style.display = "none";
 } 
+
+$(document).ready(() => {
+    let accordionsHeader = $(".accordion");
+    accordionsHeader.find(".accordion-header").on("click", (event) => {
+        let accordionBody = event.currentTarget.nextElementSibling;
+        let icon = $(event.currentTarget).find("i");
+        
+        if (icon.css("transform") == "matrix(-1, 0, 0, -1, 0, 0)") {
+            icon.css("transform", "rotate(0)");
+        } else {
+            icon.css("transform", "rotate(180deg)");
+        }
+        
+        $(accordionBody).slideToggle();
+    })
+})
