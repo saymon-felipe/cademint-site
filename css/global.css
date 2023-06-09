@@ -325,6 +325,10 @@ body {
         margin: 0;
     }
 
+.footer {
+    background: var(--primaria-mid);
+}
+
 @media (max-width: 768px) {
     .support-text {
         margin-bottom: 2rem;

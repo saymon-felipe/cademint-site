@@ -37,4 +37,12 @@ $(document).ready(() => {
         
         $(accordionBody).slideToggle();
     })
+
+    fillYear();
 })
+
+function fillYear() {
+    let yearElement = $("#year");
+    let now = new Date();
+    yearElement.html(now.getFullYear());
+}
