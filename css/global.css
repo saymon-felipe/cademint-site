@@ -376,6 +376,14 @@ body {
     .feature {
         flex-direction: column;
     }
+
+    .cta-container > div:first-child {
+        justify-content: center !important;
+    }
+
+    .cta-container {
+        text-align: center !important;
+    }
 }
 
 /* PÁGINA DE POLÍTICA DE PRIVACIDADE */
@@ -396,19 +404,19 @@ body {
         color: var(--secundaria-mid)
     }
 
-.privacy-policy-item {
+.privacy-policy-item, .terms-of-use-item {
     margin-bottom: 2.2rem;
 }
 
-.privacy-policy-item:last-child {
+.privacy-policy-item:last-child, .terms-of-use-item:last-child {
     margin-bottom: 0;
 }
 
-.privacy-policy-page {
+.privacy-policy-page, .terms-of-use-page {
     position: relative;
 }
 
-    .privacy-policy-page::before {
+    .privacy-policy-page::before, .terms-of-use-page::before {
         content: '';
         width: 100vw;
         height: 40vh;
@@ -421,7 +429,7 @@ body {
         z-index: -1;
     }
 
-.privacy-policy {
+.privacy-policy, .terms-of-use {
     background: var(--white);
     border: 1px solid var(--cinza-200);
     margin: 4rem auto;
