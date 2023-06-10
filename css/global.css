@@ -24,6 +24,7 @@
     /* SECUNDÁRIA */
     --secundaria-high: #496AFD;
     --secundaria-high-2: #859BFE;
+    --secundaria-high-3: #DEE4FF;
     --secundaria-mid: #355AFD;
     --secundaria-dark: #3050DC;
 
@@ -46,6 +47,11 @@ body {
 
 .cademint-header {
     background: var(--primaria-mid);
+}
+
+.cademint-header-white {
+    background: var(--white);
+    border-bottom: 1px solid var(--cinza-200);
 }
 
 .cademint-logo {
@@ -329,6 +335,39 @@ body {
     background: var(--primaria-mid);
 }
 
+.signature {
+    display: flex;
+    flex-direction: column;
+}
+
+    .signature p:first-child {
+        font-weight: bold;
+    }
+
+    .signature p {
+        margin: 0 0 3px 0;
+    }
+
+    .signature p:last-child {
+        margin-bottom: 0;
+    }
+
+.social-links i {
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 5px;
+    color: var(--secundaria-mid);
+}
+
+    .social-links i:hover {
+        color: var(--secundaria-dark);
+    }
+
+.links p {
+    font-weight: 600;
+    margin-right: 15px;
+}
+
 @media (max-width: 768px) {
     .support-text {
         margin-bottom: 2rem;
@@ -337,4 +376,54 @@ body {
     .feature {
         flex-direction: column;
     }
+}
+
+/* PÁGINA DE POLÍTICA DE PRIVACIDADE */
+
+.icon-container {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secundaria-high-3);
+    border-radius: 50%;
+    margin: auto;
+}
+
+    .icon-container i {
+        font-size: 1.6rem;
+        color: var(--secundaria-mid)
+    }
+
+.privacy-policy-item {
+    margin-bottom: 2.2rem;
+}
+
+.privacy-policy-item:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-policy-page {
+    position: relative;
+}
+
+    .privacy-policy-page::before {
+        content: '';
+        width: 100vw;
+        height: 40vh;
+        min-height: 150px;
+        max-height: 500px;
+        background: var(--primaria-mid);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+.privacy-policy {
+    background: var(--white);
+    border: 1px solid var(--cinza-200);
+    margin: 4rem auto;
+    border-radius: 5px;
 }
