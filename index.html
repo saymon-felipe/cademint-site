@@ -22,7 +22,7 @@
         <header class="cademint-header">
             <nav class="navbar navbar-expand-lg container py-3">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
+                  <a class="navbar-brand scroll-link" href="#home-section">
                     <img src="./assets/img/logo-cademint-v2-reduced.png" class="cademint-logo" alt="Logo Cademint">
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cademint-header" aria-controls="cademint-header" aria-expanded="false" aria-label="Expandir / Contrair">
@@ -31,25 +31,25 @@
                   <div class="collapse navbar-collapse" id="cademint-header">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-center">
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Recursos</a>
+                        <a class="nav-link scroll-link" href="#features-section">Recursos</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Quem somos</a>
+                        <a class="nav-link scroll-link" href="#about-section">Quem somos</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Preços</a>
+                        <a class="nav-link scroll-link" href="#plans-section">Preços</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Duvidas</a>
+                        <a class="nav-link scroll-link" href="#accordion-section">Duvidas</a>
                       </li>
                     </ul>
-                    <button class="btn btn-outline-blue" type="button">Entrar</button>
-                    <button class="btn btn-blue" type="button">Inscreva-se</button>
+                    <a href="https://cademint.netlify.app/login" class="btn btn-outline-blue ml-0" target="_blank">Entrar</a>
+                    <a href="https://cademint.netlify.app/register" class="btn btn-blue ml-0" target="_blank">Inscreva-se</a>
                   </div>
                 </div>
               </nav>
         </header>
-        <section class="home-section py-5 my-5 container">
+        <section class="home-section section py-5 my-5 container" id="home-section">
             <div class="row">
                 <div class="col-md-6 col-sm-12 p-4">
                     <div class="home-texts">
@@ -57,8 +57,8 @@
                         <h4>Transforme o gerenciamento de projetos com a Cademint. Uma plataforma poderosa para o sucesso.</h4>
                     </div>
                     <div class="home-buttons my-5">
-                        <button type="button" class="btn btn-blue ml-0">Inscreva-se</button>
-                        <button type="button" class="btn btn-outline-blue">Ver video</button>
+                        <a href="https://cademint.netlify.app/register" class="btn btn-blue ml-0" target="_blank">Inscreva-se</a>
+                        <a href="#about-section" class="btn btn-outline-blue scroll-link">Ver video</a>
                     </div>
                     <hr>
                     <div class="row mt-5">
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </section>
-        <section class="features-section container mb-5 pb-5">
+        <section class="features-section section container mb-3 pb-5" id="features-section">
           <div class="row">
             <div class="col-12 feature">
               <div class="feature-image">
@@ -118,7 +118,7 @@
             </div>
           </div>
         </section>
-        <section class="about-section container">
+        <section class="about-section section container" id="about-section">
           <div class="row">
             <div class="col-sm-12 col-md-6 d-flex align-items-center">
               <div class="about-text">
@@ -138,7 +138,7 @@
             </div>
           </div>
         </section>
-        <section class="plans-section container py-5 mt-5">
+        <section class="plans-section section container py-5 mt-5" id="plans-section">
           <h2 class="text-center"><strong>Planos</strong></h2>
           <div class="plans-container d-flex flex-wrap justify-content-center mb-5 pb-5">
             <div class="plan plan-free mt-5">
@@ -236,7 +236,7 @@
             </div>
           </div>
         </section>
-        <section class="accordion-section container pb-5 mb-5">
+        <section class="accordion-section section container pb-5 mb-5" id="accordion-section">
           <h2 class="text-center mb-4"><strong>Dúvidas frequentes</strong></h2>
           <div class="accordion-container">
             <div class="accordion">
@@ -299,7 +299,7 @@
         <section class="cta container pb-5 mb-5">
           <div class="cta-container row">
             <div class="col-sm-12 col-md-4 d-flex align-items-center justify-content-end">
-              <button type="button" class="btn btn-blue ml-0">Inscreva-se</button>
+              <a href="https://cademint.netlify.app/register" class="btn btn-blue ml-0" target="_blank">Inscreva-se</a>
             </div>
             <div class="col-sm-12 col-md-6">
               <div class="cta-text-container m-4">
@@ -321,8 +321,12 @@
               <i class="fab fa-linkedin"></i>
             </div>
             <div class="links d-flex align-items-center mt-4">
-              <p>Termos de uso</p>
-              <p>Política de privacidade</p>
+              <p>
+                <a href="terms-of-use.html">Termos de uso</a>
+              </p>
+              <p>
+                <a href="privacy-policy.html">Política de privacidade</a>
+              </p>
             </div>
           </div>
         </footer>

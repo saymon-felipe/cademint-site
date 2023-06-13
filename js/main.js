@@ -39,6 +39,23 @@ $(document).ready(() => {
     })
 
     fillYear();
+
+    let links = document.querySelectorAll('.scroll-link');
+  
+    // Adiciona um listener de clique em cada link
+    links.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do link
+        
+        let target = document.querySelector(link.getAttribute('href')); // Obtém o elemento alvo
+        
+        // Rola para o elemento alvo suavemente
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+        });
+    });
 })
 
 function fillYear() {
