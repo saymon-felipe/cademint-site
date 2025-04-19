@@ -32,6 +32,13 @@
     --primaria-mid: #FFCA37;
     --primaria-high: #FFD35C;
     --primaria-dark: #E4B531;
+
+    /* FONTSIZE */
+    --fontsize-xl: 46px;
+    --fontsize-lg: 34px;
+    --fontsize-md: 24px;
+    --fontsize-sm: 16px;
+    --fontsize-xs: 12px;
 }
 
 html, body {
@@ -44,6 +51,28 @@ html, body {
 body {
     font-family: Ubuntu, 'Open Sans', sans-serif;
     color: var(--black);
+}
+
+h1, h2, h3, p, a {
+    color: var(--black);
+    font-weight: 500;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--fontsize-lg);
+}
+
+h2 {
+    font-size: var(--fontsize-md);
+}
+
+h3 {
+    font-size: var(--fontsize-sm);
+}
+
+p {
+    font-size: var(--fontsize-xs);
 }
 
 .cademint-header {
@@ -130,7 +159,7 @@ body {
         color: var(--secundaria-mid)
     }
 
-.support-text p {
+.support-text h3 {
     color: var(--cinza-700);
 }
 
@@ -210,6 +239,7 @@ footer a {
     cursor: pointer;
     color: var(--white);
     transition: all 0.4s;
+    z-index: 3;
 }
 
     .about-video i:hover {
